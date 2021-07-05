@@ -5,7 +5,7 @@ You first need to run intall.sh and it should automatically place the nvim direc
 
 ```./install.sh```
 
-Once done, you need to go into ~/.config/nvim/vimplug/pluggins.vim and run
+Once done, you need to go into ```~/.config/nvim/vimplug/pluggins.vim``` and run these comands yourself
 
 ```:PlugInstall```
 
