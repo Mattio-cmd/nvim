@@ -15,12 +15,12 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set nu
+set relativenumber
 set smartindent
 set nowrap
 set smartcase
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
 set undofile
 set incsearch
 
@@ -51,7 +51,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-utils/vim-man'
     Plug 'lyuts/vim-rtags'
     Plug 'vimwiki/vimwiki'
-    
+    Plug 'mhinz/vim-startify'
+
  "git
 Plug 'tpope/vim-fugitive'
 
@@ -62,22 +63,17 @@ Plug 'tpope/vim-repeat'
 call plug#end()
 
 " enable tabline
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#right_sep = ''
-let g:airline#extensions#tabline#right_alt_sep = ''
+let g:airline_theme='gruvbox'
+"let g:airline_statusline_ontop=1
+let g:rehash256 = 1
+let base16colorspace=256  " Access colors present in 256 colorspace
 
-" enable powerline fonts
-let g:airline_powerline_fonts = 1
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
-
-" Switch to your current theme
-let g:airline_theme = 'gruvbox'
-
-" Gruvbox
+"Gruvbox
 colorscheme gruvbox
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>dr <Plug>(coc-references)
