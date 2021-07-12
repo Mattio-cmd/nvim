@@ -41,7 +41,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline-themes'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
-    Plug 'Junegunn/fzf.vim' 
+    Plug 'Junegunn/fzf.vim'
+    Plug 'airblade/vim-rooter'
     Plug 'morhetz/gruvbox'
     Plug 'mhinz/vim-signify'
     Plug 'tpope/vim-fugitive'
@@ -52,8 +53,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'lyuts/vim-rtags'
     Plug 'vimwiki/vimwiki'
     Plug 'mhinz/vim-startify'
-
- "git
+"git
 Plug 'tpope/vim-fugitive'
 
 Plug 'tpope/vim-repeat'
@@ -74,7 +74,7 @@ let g:rehash256 = 1
 let base16colorspace=256  " Access colors present in 256 colorspace
 
 "Gruvbox
-colorscheme gruvbox
+colorscheme gruvbox 
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>dr <Plug>(coc-references)
 nmap <C-p> :GFiles<CR>

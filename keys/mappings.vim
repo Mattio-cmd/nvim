@@ -37,6 +37,9 @@ vnoremap > >gv
 " For NERDTRee
 nnoremap <C-f> :NERDTreeToggle<CR>
 
+" For fzf
+nnoremap <C-p> :Files
+
 " Better window navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
