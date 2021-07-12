@@ -53,7 +53,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'lyuts/vim-rtags'
     Plug 'vimwiki/vimwiki'
     Plug 'mhinz/vim-startify'
-"git
+    Plug 'sainnhe/gruvbox-material'
+
+    "git
 Plug 'tpope/vim-fugitive'
 
 Plug 'tpope/vim-repeat'
@@ -74,7 +76,7 @@ let g:rehash256 = 1
 let base16colorspace=256  " Access colors present in 256 colorspace
 
 "Gruvbox
-colorscheme gruvbox 
+colorscheme gruvbox-material 
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>dr <Plug>(coc-references)
 nmap <C-p> :GFiles<CR>
