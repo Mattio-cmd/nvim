@@ -54,7 +54,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vimwiki/vimwiki'
     Plug 'mhinz/vim-startify'
     Plug 'sainnhe/gruvbox-material'
-
     "git
 Plug 'tpope/vim-fugitive'
 
