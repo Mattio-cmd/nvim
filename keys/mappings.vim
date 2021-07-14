@@ -38,7 +38,7 @@ vnoremap > >gv
 nnoremap <C-f> :NERDTreeToggle<CR>
 
 " For fzf
-nnoremap <C-p> :Files
+nnoremap <C-o> :Files<CR>
 
 " Better window navigation
 nnoremap <C-h> <C-w>h
