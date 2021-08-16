@@ -49,6 +49,10 @@ nnoremap <C-l> <C-w>l
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 
+" For the terminal
+noremap <leader>/ :term<cr>
+
+
 " For spliting windows
 nnoremap <C-v> :vsplit<CR>
 nnoremap <S-h> :split<CR>

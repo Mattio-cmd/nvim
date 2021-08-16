@@ -1,10 +1,18 @@
-﻿" auto-install vim-plug
+﻿" __  __       _   _   _                                _
+"|  \/  | __ _| |_| |_(_) ___         ___ _ __ ___   __| |
+"| |\/| |/ _` | __| __| |/ _ \ _____ / __| '_ ` _ \ / _` |
+"| |  | | (_| | |_| |_| | (_) |_____| (__| | | | | | (_| |
+"|_|  |_|\__,_|\__|\__|_|\___/       \___|_| |_| |_|\__,_|
+"
+
+" auto-install vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   "autocmd VimEnter * PlugInstall
   "autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
+
 
 set exrc
 set secure
@@ -32,7 +40,7 @@ augroup END
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
+   Plug 'sheerun/vim-polyglot'
     " File Explorer
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
@@ -42,25 +50,28 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
     Plug 'Junegunn/fzf.vim'
-    Plug 'airblade/vim-rooter'
-    Plug 'morhetz/gruvbox'
-    Plug 'mhinz/vim-signify'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb'
-    Plug 'junegunn/gv.vim'
+"    Plug 'airblade/vim-rooter'
+"    Plug 'mhinz/vim-signify'
+"    Plug 'tpope/vim-fugitive'
+"    Plug 'tpope/vim-rhubarb'
+"    Plug 'junegunn/gv.vim'
     Plug 'jremmen/vim-ripgrep'
-    Plug 'vim-utils/vim-man'
-    Plug 'lyuts/vim-rtags'
-    Plug 'vimwiki/vimwiki'
+ "  Plug 'vim-utils/vim-man'
+"    Plug 'lyuts/vim-rtags'
+    " Plug 'vimwiki/vimwiki'
     Plug 'mhinz/vim-startify'
+    
+    " Color schemes
+    "Plug 'kaicataldo/material.vim', { 'branch': 'main' }
     Plug 'sainnhe/gruvbox-material'
-    "git
-" Color schemes
-    Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-    Plug 'jaredgorski/spacecamp'
-Plug 'tpope/vim-fugitive'
+    "Plug 'joshdick/onedark.vim'
 
-Plug 'tpope/vim-repeat'
+    " Dev icons
+  "Plug 'ryanoasis/vim-devicons'
+    
+
+    "Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-repeat'
 
 
 
@@ -77,9 +88,16 @@ let g:airline_theme='gruvbox-material'
 let g:rehash256 = 1
 let base16colorspace=256  " Access colors present in 256 colorspace
 
+" For the term
+function Term()
+ execute "below term++rows=15"
+endfunction
+command! Term call Term()
+
+
 "Gruvbox
-colorscheme material 
-nmap <leader>gd <Plug>(coc-definition)
+colorscheme gruvbox-material
+map <leader>gd <Plug>(coc-definition)
 nmap <leader>dr <Plug>(coc-references)
 nmap <C-p> :GFiles<CR>
 
