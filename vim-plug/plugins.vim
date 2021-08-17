@@ -50,6 +50,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
     Plug 'Junegunn/fzf.vim'
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
 "    Plug 'airblade/vim-rooter'
 "    Plug 'mhinz/vim-signify'
 "    Plug 'tpope/vim-fugitive'
