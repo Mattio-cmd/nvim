@@ -7,3 +7,11 @@ source $HOME/.config/nvim/plug-config/rnvimr.vim
 set splitbelow
 let g:mkdp_command_for_global=1
 
+" testing extra-powerline-symbols
+
+" set font terminal font or set gui vim font
+" to a Nerd Font (https://github.com/ryanoasis/nerd-fonts):
+set guifont=AnonymousPro\ 12
+
+" testing rounded separators (extra-powerline-symbols):
+

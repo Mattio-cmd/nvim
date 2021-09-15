@@ -53,8 +53,10 @@ nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 
 " For the terminal
-noremap <leader>/ :term<cr>
+noremap <leader>/ :split<cr> :resize 10<cr> :term<cr> 
 
+" For the BIG terminal
+noremap <leader>p :split<cr> :resize 60<cr> :term<cr> 
 
 " For spliting windows
 nnoremap <C-v> :vsplit<CR>

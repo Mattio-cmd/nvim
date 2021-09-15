@@ -16,6 +16,7 @@ endif
 
 set exrc
 set secure
+set encoding=utf-8                      " The encoding displayed
 set colorcolumn=110
 highlight ColorColumn ctermbg=darkgray
 set noerrorbells
@@ -68,7 +69,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'kaicataldo/material.vim', { 'branch': 'main' }
     Plug 'sainnhe/gruvbox-material'
     "Plug 'joshdick/onedark.vim'
-    "Plug 'morhetz/gruvbox'
+"    Plug 'morhetz/gruvbox'
     " Dev icons
       Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
       Plug 'ryanoasis/vim-devicons'
@@ -114,7 +115,7 @@ if executable('rg')
 endif
 
 " For gruvbox dark
-let g:gruvbox_contrast_light = 'soft' 
+let g:gruvbox_contrast_dark='hard'
 
 
 " Always show tabs
