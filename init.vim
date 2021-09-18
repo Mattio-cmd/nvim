@@ -13,5 +13,4 @@ let g:mkdp_command_for_global=1
 " to a Nerd Font (https://github.com/ryanoasis/nerd-fonts):
 set guifont=AnonymousPro\ 12
 
-" testing rounded separators (extra-powerline-symbols):
-
+" For gruvbox contrast

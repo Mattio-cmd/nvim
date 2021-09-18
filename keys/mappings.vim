@@ -37,6 +37,11 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 vnoremap < <gv
 vnoremap > >gv
 
+" For keeping search results centered
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+
 " For NERDTRee
 nnoremap <C-f> :NERDTreeToggle<CR>
 

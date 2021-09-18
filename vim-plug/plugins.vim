@@ -13,8 +13,7 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   "autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-
-set exrc
+set exrc 
 set secure
 set encoding=utf-8                      " The encoding displayed
 set colorcolumn=110
@@ -69,7 +68,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'kaicataldo/material.vim', { 'branch': 'main' }
     Plug 'sainnhe/gruvbox-material'
     "Plug 'joshdick/onedark.vim'
-"    Plug 'morhetz/gruvbox'
+    "Plug 'morhetz/gruvbox'
     " Dev icons
       Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
       Plug 'ryanoasis/vim-devicons'
@@ -115,7 +114,6 @@ if executable('rg')
 endif
 
 " For gruvbox dark
-let g:gruvbox_contrast_dark='hard'
 
 
 " Always show tabs
@@ -139,4 +137,3 @@ let g:NERDTreeExtensionHighlightColor['css'] = '' "assigning it to an empty stri
 let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
-
