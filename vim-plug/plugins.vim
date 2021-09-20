@@ -14,7 +14,7 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 set exrc 
-set secure
+set secure 
 set encoding=utf-8                      " The encoding displayed
 set colorcolumn=110
 highlight ColorColumn ctermbg=darkgray
@@ -68,7 +68,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'kaicataldo/material.vim', { 'branch': 'main' }
     Plug 'sainnhe/gruvbox-material'
     "Plug 'joshdick/onedark.vim'
-    "Plug 'morhetz/gruvbox'
+    Plug 'morhetz/gruvbox'
     " Dev icons
       Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
       Plug 'ryanoasis/vim-devicons'
@@ -108,13 +108,13 @@ map <leader>gd <Plug>(coc-definition)
 nmap <leader>dr <Plug>(coc-references)
 nmap <C-p> :GFiles<CR>
 
-set background=dark
+"set background=dark
 if executable('rg')
     let g:rg_derive_root='true'
 endif
 
 " For gruvbox dark
-
+let g:gruvbox_contrast_dark = 'hard'
 
 " Always show tabs
 set showtabline=2

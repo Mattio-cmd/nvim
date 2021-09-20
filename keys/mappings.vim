@@ -43,9 +43,7 @@ nnoremap N Nzzzv
 nnoremap J mzJ`z
 
 " Undo break points
-inoremap , ,<c-g>u
-inoremap . .<c-g>u
-inoremap . .<c-g>u
+" 
 
 " For NERDTRee
 nnoremap <C-f> :NERDTreeToggle<CR>
@@ -61,6 +59,9 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
+
+" Close ONE single buffer
+nnoremap <C-x> :w :bw<cr>
 
 " For the terminal
 noremap <leader>/ :split<cr> :resize 10<cr> :term<cr> 
