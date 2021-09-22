@@ -5,7 +5,6 @@ source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
-set splitbelow
 let g:mkdp_command_for_global=1
 
 " testing extra-powerline-symbols
@@ -13,5 +12,5 @@ let g:mkdp_command_for_global=1
 " set font terminal font or set gui vim font
 " to a Nerd Font (https://github.com/ryanoasis/nerd-fonts):
 set guifont=AnonymousPro\ 12
-
-" For gruvbox contrast
+" NERDTree to start automatically
+" autocmd VimEnter * NERDTree | wincmd p

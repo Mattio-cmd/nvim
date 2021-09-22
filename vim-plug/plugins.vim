@@ -49,8 +49,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
-    Plug 'Junegunn/fzf.vim'
+    "Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
+    "Plug 'Junegunn/fzf.vim'
     Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 "    Plug 'airblade/vim-rooter'
@@ -69,44 +69,24 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sainnhe/gruvbox-material'
     "Plug 'joshdick/onedark.vim'
     Plug 'morhetz/gruvbox'
+    
     " Dev icons
       Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
       Plug 'ryanoasis/vim-devicons'
 
     "Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-repeat'
+    "Plug 'tpope/vim-repeat'
+    
     " Ranger integration
-    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+    "Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
     call plug#end()
 
 " enable tabline
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-"let g:airline_statusline_ontop=1
-let g:rehash256 = 1
-let base16colorspace=256  " Access colors present in 256 colorspace
-let g:airline#extensions#hunks#enabled=0
-
-
-" For the term
-function Term()
- execute "below term++rows=15"
-endfunction
-command! Term call Term()
-
-" NERDTree to start automatically
-"autocmd VimEnter * NERDTree | wincmd p
 
 
 "Gruvbox
 colorscheme gruvbox-material
-map <leader>gd <Plug>(coc-definition)
-nmap <leader>dr <Plug>(coc-references)
-nmap <C-p> :GFiles<CR>
 
 "set background=dark
 if executable('rg')
@@ -116,24 +96,5 @@ endif
 " For gruvbox dark
 let g:gruvbox_contrast_dark = 'hard'
 
-" Always show tabs
-set showtabline=2
-
-" We don't need to see things like -- INSERT -- anymore
-set noshowmode
-
 
 " For nerdtree cool fonts
-let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
-let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
-
-let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
-let g:NERDTreeHighlightFoldersFullName = 0 " highlights the folder name
-
-" If you have vim-devicons you can customize your icons for each file type.
-let g:NERDTreeExtensionHighlightColor = {} "this line is needed to avoid error
-let g:NERDTreeExtensionHighlightColor['css'] = '' "assigning it to an empty string will skip highlight
-
-let g:NERDTreeFileExtensionHighlightFullName = 1
-let g:NERDTreeExactMatchHighlightFullName = 1
-let g:NERDTreePatternMatchHighlightFullName = 1

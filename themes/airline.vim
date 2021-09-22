@@ -23,7 +23,8 @@ let g:airline#extensions#hunks#enabled=1
 
 
 " Switch to your current theme
-let g:airline_theme = 'gruvbox_material' "'base16_gruvbox_dark_hard' 'gruvbox_material'
+ let g:airline_theme = 'gruvbox_material'  
+"'base16_gruvbox_dark_hard' 'gruvbox_material'
 
 " Always show tabs
 set showtabline=2

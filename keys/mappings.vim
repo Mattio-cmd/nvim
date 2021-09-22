@@ -60,8 +60,13 @@ nnoremap <C-l> <C-w>l
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 
-" Close ONE single buffer
-nnoremap <C-x> :w :bw<cr>
+" Close ONE single buffer BUT it will not be saved unless you do C-s
+nnoremap <C-x> :bw<cr>
+
+" Coc definitions
+map <leader>gd <Plug>(coc-definition)
+nmap <leader>dr <Plug>(coc-references)
+nmap <C-p> :GFiles<CR>
 
 " For the terminal
 noremap <leader>/ :split<cr> :resize 10<cr> :term<cr> 
