@@ -42,8 +42,6 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap J mzJ`z
 
-" Undo break points
-" 
 
 " For NERDTRee
 nnoremap <C-f> :NERDTreeToggle<CR>
@@ -77,3 +75,20 @@ noremap <leader>p :split<CR> :resize 60<CR> :term<CR>
 " For spliting windows
 nnoremap <C-v> :vsplit<CR>
 nnoremap <S-h> :split<CR>
+
+" Make Y behave like the rest of the capiptal letters.
+nnoremap Y y$
+
+" Undo break points
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+
+" Moving text
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+inoremap <C-j> <esc>:m .+1<CR>==
+inoremap <C-k> <esc>:m .-2<CR>==
+nnoremap <leader>j :m .+1<CR>==
+nnoremap <leader>k :m .-2<CR>==
