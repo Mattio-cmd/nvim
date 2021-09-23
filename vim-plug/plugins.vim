@@ -86,15 +86,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 
 "Gruvbox
-colorscheme gruvbox-material
+colorscheme gruvbox
 
-"set background=dark
+set background=dark
 if executable('rg')
     let g:rg_derive_root='true'
 endif
 
 " For gruvbox dark
 let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_transparent_bg = 1
 
+autocmd VimEnter * hi Normal ctermbg=none
 
-" For nerdtree cool fonts
