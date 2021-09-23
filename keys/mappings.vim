@@ -69,10 +69,10 @@ nmap <leader>dr <Plug>(coc-references)
 nmap <C-p> :GFiles<CR>
 
 " For the terminal
-noremap <leader>/ :split<cr> :resize 10<cr> :term<cr> 
+noremap <leader>/ :split<CR> :resize 10<CR> :term<CR> 
 
 " For the BIG terminal
-noremap <leader>p :split<cr> :resize 60<cr> :term<cr> 
+noremap <leader>p :split<CR> :resize 60<CR> :term<CR> 
 
 " For spliting windows
 nnoremap <C-v> :vsplit<CR>

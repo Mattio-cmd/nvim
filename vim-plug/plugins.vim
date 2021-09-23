@@ -86,7 +86,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 
 "Gruvbox
-colorscheme gruvbox
+colorscheme gruvbox-material
 
 set background=dark
 if executable('rg')
@@ -97,5 +97,6 @@ endif
 let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_transparent_bg = 1
 
+" This is for transparency
 autocmd VimEnter * hi Normal ctermbg=none
 
