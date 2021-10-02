@@ -42,7 +42,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax Support
    Plug 'sheerun/vim-polyglot'
     " File Explorer
-    Plug 'scrooloose/NERDTree'
+    "Plug 'scrooloose/NERDTree'
     Plug 'preservim/nerdcommenter'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
@@ -68,11 +68,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'kaicataldo/material.vim', { 'branch': 'main' }
     Plug 'sainnhe/gruvbox-material'
     "Plug 'joshdick/onedark.vim'
-    Plug 'morhetz/gruvbox'
+    "Plug 'morhetz/gruvbox'
     
     " Dev icons
-      Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-      Plug 'ryanoasis/vim-devicons'
+      "Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+      "Plug 'ryanoasis/vim-devicons'
 
     "Plug 'tpope/vim-fugitive'
     "Plug 'tpope/vim-repeat'
