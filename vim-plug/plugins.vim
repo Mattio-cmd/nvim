@@ -58,7 +58,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 "    Plug 'tpope/vim-fugitive'
 "    Plug 'tpope/vim-rhubarb'
 "    Plug 'junegunn/gv.vim'
-    Plug 'jremmen/vim-ripgrep'
+    "Plug 'jremmen/vim-ripgrep'
  "  Plug 'vim-utils/vim-man'
 "    Plug 'lyuts/vim-rtags'
     " Plug 'vimwiki/vimwiki'
@@ -72,7 +72,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
     " Dev icons
       "Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-      "Plug 'ryanoasis/vim-devicons'
+      Plug 'ryanoasis/vim-devicons'
 
     "Plug 'tpope/vim-fugitive'
     "Plug 'tpope/vim-repeat'
