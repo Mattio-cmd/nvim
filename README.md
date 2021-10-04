@@ -20,7 +20,7 @@ After this, just open the ```plugins.vim``` file located under ```~/.config/nvim
 ```
 PlugInstall
 ```
-NOTE: If you plan to also use coc  you also need to install ```nodejs``` first. Otherwhise you are going to get and error every time you open neovim.
+NOTE: If you plan to also use coc  you need to install ```nodejs``` first. Otherwhise you are going to get and error every time you open neovim.
 
 ##  Important remaps
 - ```Control + h, j, k or l``` will serve as the movement keys for splits in normal mode.
