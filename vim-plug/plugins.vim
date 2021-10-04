@@ -24,7 +24,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
 
-  " Based nerdcomenter leader+cc
+  " nerdcomenter leader+cc
     Plug 'preservim/nerdcommenter'
 
     " Auto pairs for '(' '[' '{'
@@ -41,12 +41,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sainnhe/gruvbox-material'
 
 
-" PLUGS THAT NOW I DONT REALLY USE:
+" Other usefull plugins
     " Coc for completion
     "Plug 'neoclide/coc.nvim', {'branch': 'release'}
   
     " For a really cool preview of markdown files
-    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+    "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
     
     "Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
     "Plug 'Junegunn/fzf.vim'
