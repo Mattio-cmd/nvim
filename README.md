@@ -3,6 +3,20 @@
 
 ## Showcase
 
+### IDE like appearence
+![donut_compilation.png](https://github.com/Mattio-cmd/nvim/blob/main/showcase/donut_compilation.png)
+![startify.png](https://github.com/Mattio-cmd/nvim/blob/main/showcase/startify.png)
+
+### Beautifull colorscheme for more focus whilst coding
+![cpp.png](https://github.com/Mattio-cmd/nvim/blob/main/showcase/cpp.png)
+
+### Organized configuration
+![organized.png](https://github.com/Mattio-cmd/nvim/blob/main/showcase/organized.png)
+![nerdtree.png](https://github.com/Mattio-cmd/nvim/blob/main/showcase/nerdtree.png)
+
+### Full transparency support
+![transparency.png](https://github.com/Mattio-cmd/nvim/blob/main/showcase/transparency.png)
+
 ## Features
 - [x] IDE like stable coding enviorment.
 - [x] Beautifull apearence with eye saving taken into mind.
@@ -40,3 +54,6 @@ NOTE: If you plan to also use coc  you need to install ```nodejs``` first. Other
 - ```Shift + h``` will horizontally split the window.
 - ```Shift + k``` will bring a help menu in whatever happens you are positioned.
 
+
+## Aditional comments
+- This 100% works on most linux distros and OpenBSD (or at least on my set up)
