@@ -8,6 +8,7 @@
 - [x] Beautifull apearence with eye saving taken into mind.
 - [x] Amazing remaps.
 - [x] Organized configuration with usefull comments in case a setting is not understood.
+- [x] Full transparency support with picom.
 
 
 ## Installation
