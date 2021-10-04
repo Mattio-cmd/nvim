@@ -46,7 +46,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'neoclide/coc.nvim', {'branch': 'release'}
   
     " For a really cool preview of markdown files
-    "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
     
     "Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
     "Plug 'Junegunn/fzf.vim'
