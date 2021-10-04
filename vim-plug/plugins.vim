@@ -34,48 +34,49 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     
-    " Dev icons
-    Plug 'ryanoasis/vim-devicons'
-  
     " Giga Chad color scheme
     Plug 'sainnhe/gruvbox-material'
 
+    " Dev icons
+    "Plug 'ryanoasis/vim-devicons'
+  
+
 
 " Other usefull plugins
-    " Coc for completion
+    "" Coc for completion
     "Plug 'neoclide/coc.nvim', {'branch': 'release'}
   
-    " For a really cool preview of markdown files
+    "" For a really cool preview of markdown files
     "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
     
-    "Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
+   "Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
     "Plug 'Junegunn/fzf.vim'
 
-"    Plug 'airblade/vim-rooter'
-"    Plug 'mhinz/vim-signify'
-"    Plug 'tpope/vim-fugitive'
-"    Plug 'tpope/vim-rhubarb'
-"    Plug 'junegunn/gv.vim'
-    "Plug 'jremmen/vim-ripgrep'
- "  Plug 'vim-utils/vim-man'
-"    Plug 'lyuts/vim-rtags'
-    " Plug 'vimwiki/vimwiki'
-    " File Explorer
+""    Plug 'airblade/vim-rooter'
+""    Plug 'mhinz/vim-signify'
+""    Plug 'tpope/vim-fugitive'
+""    Plug 'tpope/vim-rhubarb'
+""    Plug 'junegunn/gv.vim'
+    ""Plug 'jremmen/vim-ripgrep'
+ ""  Plug 'vim-utils/vim-man'
+""    Plug 'lyuts/vim-rtags'
+    "" Plug 'vimwiki/vimwiki'
+    "" File Explorer
     "Plug 'scrooloose/NERDTree'
    "Plug 'mhinz/vim-startify'
     
-    " Color schemes
-    "Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-    "Plug 'joshdick/onedark.vim'
-    "Plug 'morhetz/gruvbox'
+    "" Color schemes
+    ""Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+    ""Plug 'joshdick/onedark.vim'
+    ""Plug 'morhetz/gruvbox'
     
-    " Dev icons
+    "" Dev icons
       "Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-    "Plug 'tpope/vim-fugitive'
-    "Plug 'tpope/vim-repeat'
+    ""Plug 'tpope/vim-fugitive'
+    ""Plug 'tpope/vim-repeat'
     
-    " Ranger integration
-    "Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+    "" Ranger integration
+    ""Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
     call plug#end()
