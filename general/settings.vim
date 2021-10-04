@@ -1,6 +1,3 @@
-" set leader key
-let g:mapleader = "\<Space>"
-
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
@@ -34,6 +31,18 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set autochdir                           " Your working directory will always be the same as your working directory
+
+set exrc
+set secure
+set relativenumber
+set colorcolumn=110
+set smartcase
+set noswapfile
+set undofile
+set incsearch
+set guifont=AnonymousPro\ 12
+highlight ColorColum ctermbg=darkgray
+
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 

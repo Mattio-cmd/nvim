@@ -1,3 +1,6 @@
+" If for whatever reason the gylphs (or however they are spelled) look bad,
+" uninstall some fonts.
+
 " enable tabline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep =   ''  
@@ -19,15 +22,5 @@ let g:airline_right_sep =  ''
 
 let g:airline#extensions#hunks#enabled=1
 
-
-
-
 " Switch to your current theme
   let g:airline_theme = 'gruvbox_material'  
-"'base16_gruvbox_dark_hard' 'gruvbox_material'
-
-" Always show tabs
-set showtabline=2
-
-" We don't need to see things like -- INSERT -- anymore
-set noshowmode
