@@ -6,6 +6,7 @@
 ## Features
 - [x] IDE like stable coding enviorment.
 - [x] Beautifull apearence with eye saving taken into mind.
+- [x] Colorscheme specially selected for more focus in actually editing a file.
 - [x] Amazing remaps.
 - [x] Organized configuration with usefull comments in case a setting is not understood.
 - [x] Full transparency support with picom.
