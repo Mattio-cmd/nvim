@@ -7,7 +7,7 @@
 ![donut_compilation.png](https://github.com/Mattio-cmd/nvim/blob/main/showcase/donut_compilation.png)
 ![startify.png](https://github.com/Mattio-cmd/nvim/blob/main/showcase/startify.png)
 
-### Beautifull colorscheme for more focus whilst coding
+### Beautifull colorscheme for more focus whlist coding
 ![cpp.png](https://github.com/Mattio-cmd/nvim/blob/main/showcase/cpp.png)
 
 ### Organized configuration
