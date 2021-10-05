@@ -13,12 +13,6 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   "autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-" I added this beacause idk why but header files would be recognized as cpp, lol
-augroup project
-  autocmd!
-  autocmd BufRead,BufNewFile *.h,*.c set filetype=c
-augroup END
-
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
@@ -31,8 +25,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'jiangmiao/auto-pairs'
 
     " Airline & airline themes
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+    "Plug 'vim-airline/vim-airline'
+    "Plug 'vim-airline/vim-airline-themes'
     
     " Giga Chad color scheme
     Plug 'sainnhe/gruvbox-material'

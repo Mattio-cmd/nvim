@@ -43,8 +43,19 @@ set incsearch
 set guifont=AnonymousPro\ 12
 highlight ColorColum ctermbg=darkgray
 
+" For custom status bar
+set laststatus=2
+set statusline=%m\ %F\ %m\%y\ %{&fileencoding?&fileencoding:&encoding}\%T\ %=%(C:%c\ L:%l\ %P%) 
+ 
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+
+" I added this beacause idk why but header files would be recognized as cpp, lol
+augroup project
+  autocmd!
+  autocmd BufRead,BufNewFile *.h,*.c set filetype=c
+augroup END
