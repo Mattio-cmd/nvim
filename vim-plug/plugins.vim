@@ -28,7 +28,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'preservim/nerdcommenter'
 
     " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
+    "Plug 'jiangmiao/auto-pairs'
 
     " Airline & airline themes
     Plug 'vim-airline/vim-airline'
@@ -60,10 +60,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     ""Plug 'jremmen/vim-ripgrep'
  ""  Plug 'vim-utils/vim-man'
 ""    Plug 'lyuts/vim-rtags'
-    "" Plug 'vimwiki/vimwiki'
-    "" File Explorer
+    """ Plug 'vimwiki/vimwiki'
+    """ File Explorer
     "Plug 'scrooloose/NERDTree'
-   "Plug 'mhinz/vim-startify'
+   ""Plug 'mhinz/vim-startify'
     
     "" Color schemes
     ""Plug 'kaicataldo/material.vim', { 'branch': 'main' }
