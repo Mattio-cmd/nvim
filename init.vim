@@ -6,5 +6,4 @@ source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/plug-config/gruvbox.vim
 
-" let g:mkdp_command_for_global=1
-
+"let g:mkdp_command_for_global=1

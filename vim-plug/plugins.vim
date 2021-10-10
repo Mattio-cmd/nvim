@@ -29,7 +29,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'vim-airline/vim-airline-themes'
     
     " Giga Chad color scheme
-    Plug 'sainnhe/gruvbox-material'
+"    Plug 'sainnhe/gruvbox-material'
 
     " Dev icons
     "Plug 'ryanoasis/vim-devicons'
@@ -62,7 +62,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "" Color schemes
     ""Plug 'kaicataldo/material.vim', { 'branch': 'main' }
     ""Plug 'joshdick/onedark.vim'
-    ""Plug 'morhetz/gruvbox'
+    Plug 'morhetz/gruvbox'
     
     "" Dev icons
       "Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
