@@ -1,13 +1,17 @@
 "Gruvbox
+"if has('termguicolors')
+    "set termguicolors
+"endif
 if executable('rg')
     let g:rg_derive_root = 'true'
 endif
 
 " For gruvbox dark
 set background=dark
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'hard'
-let g:gruvbox_transparent_bg = 0
+let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_transparent_background = 1 " This enables transparency
+colorscheme gruvbox-material
 
-" This is for transparency
-autocmd VimEnter * hi Normal ctermbg=none
+" This is for transparency in case that the other options doesnt work for
+" whatever reason
+"autocmd VimEnter * hi Normal ctermbg=none

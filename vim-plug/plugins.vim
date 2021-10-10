@@ -21,24 +21,26 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " nerdcomenter leader+cc
     Plug 'preservim/nerdcommenter'
 
+    " Giga Chad color scheme
+    Plug 'sainnhe/gruvbox-material'
+
     " Auto pairs for '(' '[' '{'
-    "Plug 'jiangmiao/auto-pairs'
+    Plug 'jiangmiao/auto-pairs'
 
     " Airline & airline themes
-    "Plug 'vim-airline/vim-airline'
-    "Plug 'vim-airline/vim-airline-themes'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
     
-    " Giga Chad color scheme
-"    Plug 'sainnhe/gruvbox-material'
+
 
     " Dev icons
-    "Plug 'ryanoasis/vim-devicons'
+    Plug 'ryanoasis/vim-devicons'
   
 
 
 " Other usefull plugins
     "" Coc for completion
-    "Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
   
     "" For a really cool preview of markdown files
     "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -46,26 +48,27 @@ call plug#begin('~/.config/nvim/autoload/plugged')
    "Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
     "Plug 'Junegunn/fzf.vim'
 
-""    Plug 'airblade/vim-rooter'
-""    Plug 'mhinz/vim-signify'
-""    Plug 'tpope/vim-fugitive'
-""    Plug 'tpope/vim-rhubarb'
-""    Plug 'junegunn/gv.vim'
-    ""Plug 'jremmen/vim-ripgrep'
- ""  Plug 'vim-utils/vim-man'
-""    Plug 'lyuts/vim-rtags'
+"    Plug 'airblade/vim-rooter'
+"    Plug 'mhinz/vim-signify'
+"    Plug 'tpope/vim-fugitive'
+"    Plug 'tpope/vim-rhubarb'
+"    Plug 'junegunn/gv.vim'
+"    Plug 'jremmen/vim-ripgrep'
+"    Plug 'vim-utils/vim-man'
+"    Plug 'lyuts/vim-rtags'
     """ Plug 'vimwiki/vimwiki'
     """ File Explorer
-    "Plug 'scrooloose/NERDTree'
-   ""Plug 'mhinz/vim-startify'
+    Plug 'scrooloose/NERDTree'
+   Plug 'mhinz/vim-startify'
     
     "" Color schemes
     ""Plug 'kaicataldo/material.vim', { 'branch': 'main' }
     ""Plug 'joshdick/onedark.vim'
-    Plug 'morhetz/gruvbox'
+    "Plug 'morhetz/gruvbox'
+ "   Plug 'KeitaNakamura/neodark.vim'
     
     "" Dev icons
-      "Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+      Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
     ""Plug 'tpope/vim-fugitive'
     ""Plug 'tpope/vim-repeat'
