@@ -40,8 +40,9 @@ set smartcase
 set noswapfile
 set undofile
 set incsearch
-set guifont=AnonymousPro\ 12
-highlight ColorColum ctermbg=darkgray
+"set guifont=AnonymousProMinus\ 18
+set guifont=IosevkaNerdFont\ 28
+highlight ColorColum ctermbg=gray
 
 " For custom status bar
 set laststatus=2
@@ -59,3 +60,7 @@ augroup project
   autocmd!
   autocmd BufRead,BufNewFile *.h,*.c set filetype=c
 augroup END
+
+" For automatically compiling cpp and c files
+autocmd FileType cpp nnoremap <buffer> <F4> :let $VIM_DIR=expand('%:p:h')<CR>:let $FILE_NAME_WITH_EXT=expand('%:t')<CR>:terminal<CR>cd "$VIM_DIR"<CR>export PS1="\e[0;34m \W${_BOLD}\$ \e[m"<CR>clear<CR>FILE_NAME=${FILE_NAME_WITH_EXT::-4}<CR>g++ $FILE_NAME_WITH_EXT -o $FILE_NAME.o<CR>clear<CR>./$FILE_NAME.o<CR>
+

@@ -1,5 +1,4 @@
 " enable tabline
-let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 "let g:airline#extensions#tabline#left_sep = ' '
@@ -10,7 +9,6 @@ let base16colorspace=256  " Access colors present in 256 colorspace
 let g:airline#extensions#hunks#enabled=0
 
 
-
 " If for whatever reason the gylphs (or however they are spelled) look bad,
 " uninstall some fonts.
 
@@ -18,7 +16,7 @@ let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep =   ''  
 let g:airline#extensions#tabline#left_alt_sep =  '' 
-let g:airline#extensions#tabline#right_sep =  ''
+let g:airline#extensions#tabline#right_sep =   ''
 let g:airline#extensions#tabline#right_alt_sep = ''
 
 " enable powerline fonts
@@ -31,7 +29,12 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#bufferline#enabled = 1
 let g:airline_left_sep =   ''
 let g:airline_left_alt_sep =  ''
-let g:airline_right_sep = ''  
+let g:airline_right_sep =  ''  
 
 let g:airline#extensions#hunks#enabled=1
 
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"

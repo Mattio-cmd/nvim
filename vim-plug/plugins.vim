@@ -30,8 +30,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Airline & airline themes
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    
 
+    " Lightline    
+     "Plug 'itchyny/lightline.vim'
 
     " Dev icons
     Plug 'ryanoasis/vim-devicons'
@@ -43,10 +44,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
   
     "" For a really cool preview of markdown files
-    "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
     
-   "Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
-    "Plug 'Junegunn/fzf.vim'
+   Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
+   Plug 'Junegunn/fzf.vim'
 
 "    Plug 'airblade/vim-rooter'
 "    Plug 'mhinz/vim-signify'

@@ -15,3 +15,5 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+
+let g:WebDevIconsNerdTreeAfterGlyphPadding = '100'
