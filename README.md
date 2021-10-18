@@ -57,3 +57,4 @@ NOTE: If you plan to also use coc  you need to install ```nodejs``` first. Other
 
 ## Aditional comments
 - This 100% works on most linux distros and OpenBSD (or at least on my set up)
+- In case the gylphs (or however they are called, im done with them) dont work, just install nerd-fonts-complete from the AUR.

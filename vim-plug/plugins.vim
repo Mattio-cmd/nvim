@@ -49,12 +49,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
    Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
    Plug 'Junegunn/fzf.vim'
 
-"    Plug 'airblade/vim-rooter'
-"    Plug 'mhinz/vim-signify'
+    "Plug 'airblade/vim-rooter'
+    "Plug 'mhinz/vim-signify'
 "    Plug 'tpope/vim-fugitive'
 "    Plug 'tpope/vim-rhubarb'
 "    Plug 'junegunn/gv.vim'
-"    Plug 'jremmen/vim-ripgrep'
+    Plug 'jremmen/vim-ripgrep'
 "    Plug 'vim-utils/vim-man'
 "    Plug 'lyuts/vim-rtags'
     """ Plug 'vimwiki/vimwiki'

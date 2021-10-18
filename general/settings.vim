@@ -40,8 +40,7 @@ set smartcase
 set noswapfile
 set undofile
 set incsearch
-"set guifont=AnonymousProMinus\ 18
-set guifont=IosevkaNerdFont\ 28
+set guifont=AnonymousProMinus\ 18
 highlight ColorColum ctermbg=gray
 
 " For custom status bar
