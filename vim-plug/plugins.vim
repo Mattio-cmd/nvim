@@ -66,7 +66,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     ""Plug 'kaicataldo/material.vim', { 'branch': 'main' }
     ""Plug 'joshdick/onedark.vim'
     "Plug 'morhetz/gruvbox'
- "   Plug 'KeitaNakamura/neodark.vim'
+    Plug 'KeitaNakamura/neodark.vim'
     
     "" Dev icons
       Plug 'tiagofumo/vim-nerdtree-syntax-highlight'

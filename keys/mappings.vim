@@ -30,7 +30,6 @@ nnoremap <S-p> :MarkdownPreviewToggle<CR>
 " Alternate way to save
 nnoremap <C-s> :w<CR> " Alternate way to quit and save nnoremap 
 nnoremap <C-q> :wq!<CR> " Alternative way to quit
-nnoremap <S-Q> :q!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
 " <TAB>: completion.
