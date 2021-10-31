@@ -45,8 +45,10 @@ nnoremap N Nzzzv
 nnoremap J mzJ`z
 
 
-" For NERDTRee
-nnoremap <C-f> :NERDTreeToggle<CR>
+" For CHADTree
+nnoremap <C-f> :CHADopen<CR>
+nnoremap <leader>l <cmd>call setqflist([])<cr>
+
 
 " For fzf
 nnoremap <C-o> :Files<CR>
@@ -94,3 +96,8 @@ inoremap <C-j> <esc>:m .+1<CR>==
 inoremap <C-k> <esc>:m .-2<CR>==
 nnoremap <leader>j :m .+1<CR>==
 nnoremap <leader>k :m .-2<CR>==
+
+" For dashboar.vim
+nnoremap <Leader>d :Dashboard<CR>
+nmap <Leader>ss :<C-u>SessionSave<CR>
+nmap <Leader>sl :<C-u>SessionLoad<CR>

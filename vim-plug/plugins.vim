@@ -25,23 +25,30 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sainnhe/gruvbox-material'
 
     " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
+    "Plug 'jiangmiao/auto-pairs'
 
     " Airline & airline themes
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+    Plug 'nvim-lualine/lualine.nvim' 
+    "Plug 'vim-airline/vim-airline'
+    "Plug 'vim-airline/vim-airline-themes'
 
     " Lightline    
      "Plug 'itchyny/lightline.vim'
 
     " Dev icons
     Plug 'ryanoasis/vim-devicons'
+
+    "CHADTree
+    Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+
   
 
 
 " Other usefull plugins
     "" Coc for completion
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    "Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+
   
     "" For a really cool preview of markdown files
     Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -57,19 +64,21 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jremmen/vim-ripgrep'
 "    Plug 'vim-utils/vim-man'
 "    Plug 'lyuts/vim-rtags'
-    """ Plug 'vimwiki/vimwiki'
+     "Plug 'vimwiki/vimwiki'
     """ File Explorer
-    Plug 'scrooloose/NERDTree'
-   Plug 'mhinz/vim-startify'
+    "Plug 'scrooloose/NERDTree'
+"   Plug 'mhinz/vim-startify'
+   Plug 'glepnir/dashboard-nvim'
+
     
     "" Color schemes
     ""Plug 'kaicataldo/material.vim', { 'branch': 'main' }
     ""Plug 'joshdick/onedark.vim'
     "Plug 'morhetz/gruvbox'
-    Plug 'KeitaNakamura/neodark.vim'
+    "Plug 'KeitaNakamura/neodark.vim'
     
     "" Dev icons
-      Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+      "Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
     ""Plug 'tpope/vim-fugitive'
     ""Plug 'tpope/vim-repeat'
