@@ -29,11 +29,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Airline & airline themes
     Plug 'nvim-lualine/lualine.nvim' 
-    "Plug 'vim-airline/vim-airline'
-    "Plug 'vim-airline/vim-airline-themes'
-
-    " Lightline    
-     "Plug 'itchyny/lightline.vim'
 
     " Dev icons
     Plug 'ryanoasis/vim-devicons'
@@ -55,20 +50,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
    Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
    Plug 'Junegunn/fzf.vim'
+   Plug 'glepnir/dashboard-nvim'
+   Plug 'jremmen/vim-ripgrep'
 
     "Plug 'airblade/vim-rooter'
     "Plug 'mhinz/vim-signify'
-"    Plug 'tpope/vim-fugitive'
 "    Plug 'tpope/vim-rhubarb'
 "    Plug 'junegunn/gv.vim'
-    Plug 'jremmen/vim-ripgrep'
 "    Plug 'vim-utils/vim-man'
 "    Plug 'lyuts/vim-rtags'
      "Plug 'vimwiki/vimwiki'
-    """ File Explorer
-    "Plug 'scrooloose/NERDTree'
-"   Plug 'mhinz/vim-startify'
-   Plug 'glepnir/dashboard-nvim'
 
     
     "" Color schemes
@@ -77,13 +68,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'morhetz/gruvbox'
     "Plug 'KeitaNakamura/neodark.vim'
     
-    "" Dev icons
-      "Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
     ""Plug 'tpope/vim-fugitive'
     ""Plug 'tpope/vim-repeat'
     
-    "" Ranger integration
-    ""Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
     call plug#end()
