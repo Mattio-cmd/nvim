@@ -45,8 +45,8 @@ nnoremap N Nzzzv
 nnoremap J mzJ`z
 
 
-" For CHADTree
-nnoremap <C-f> :CHADopen<CR>
+" For NvimTree
+nnoremap <C-f> :NvimTreeToggle<CR>
 nnoremap <leader>l <cmd>call setqflist([])<cr>
 
 

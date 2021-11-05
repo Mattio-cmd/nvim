@@ -31,22 +31,27 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-lualine/lualine.nvim' 
 
     " Dev icons
-    Plug 'ryanoasis/vim-devicons'
+"    Plug 'ryanoasis/vim-devicons'
+    
+    "" Coc for completion
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+    "nvim tree
+    Plug 'kyazdani42/nvim-web-devicons'
+    Plug 'kyazdani42/nvim-tree.lua'
 
     "CHADTree
-    Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+    "Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 
   
 
 
 " Other usefull plugins
-    "" Coc for completion
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     "Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 
   
     "" For a really cool preview of markdown files
-    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+    "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
     
    Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
    Plug 'Junegunn/fzf.vim'
