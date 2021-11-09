@@ -16,7 +16,7 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
+"    Plug 'sheerun/vim-polyglot'
 
   " nerdcomenter leader+cc
     Plug 'preservim/nerdcommenter'
@@ -34,31 +34,27 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 "    Plug 'ryanoasis/vim-devicons'
     
     "" Coc for completion
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     "nvim tree
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'kyazdani42/nvim-tree.lua'
 
-    "CHADTree
-    "Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
-
-  
-
 
 " Other usefull plugins
     "Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+    "Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 
-  
+
     "" For a really cool preview of markdown files
     "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
     
    Plug 'junegunn/fzf', { 'do': {-> fzf#install()} }
    Plug 'Junegunn/fzf.vim'
    Plug 'glepnir/dashboard-nvim'
-   Plug 'jremmen/vim-ripgrep'
+   "Plug 'jremmen/vim-ripgrep'
 
-    "Plug 'airblade/vim-rooter'
+    ""Plug 'airblade/vim-rooter'
     "Plug 'mhinz/vim-signify'
 "    Plug 'tpope/vim-rhubarb'
 "    Plug 'junegunn/gv.vim'
