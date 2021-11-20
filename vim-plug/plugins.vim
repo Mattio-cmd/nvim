@@ -15,8 +15,10 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Better Syntax Support
-"    Plug 'sheerun/vim-polyglot'
+    " LSP
+    Plug 'neovim/nvim-lspconfig' 
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'hrsh7th/nvim-compe'
 
   " nerdcomenter leader+cc
     Plug 'preservim/nerdcommenter'
@@ -30,21 +32,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Airline & airline themes
     Plug 'nvim-lualine/lualine.nvim' 
 
-    " Dev icons
-"    Plug 'ryanoasis/vim-devicons'
-    
-    "" Coc for completion
-"    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
     "nvim tree
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'kyazdani42/nvim-tree.lua'
-
-
-" Other usefull plugins
-    "Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
-    "Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
-
 
     "" For a really cool preview of markdown files
     "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -54,24 +44,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
    Plug 'glepnir/dashboard-nvim'
    "Plug 'jremmen/vim-ripgrep'
 
-    ""Plug 'airblade/vim-rooter'
-    "Plug 'mhinz/vim-signify'
-"    Plug 'tpope/vim-rhubarb'
-"    Plug 'junegunn/gv.vim'
-"    Plug 'vim-utils/vim-man'
-"    Plug 'lyuts/vim-rtags'
-     "Plug 'vimwiki/vimwiki'
-
     
     "" Color schemes
     ""Plug 'kaicataldo/material.vim', { 'branch': 'main' }
     ""Plug 'joshdick/onedark.vim'
     "Plug 'morhetz/gruvbox'
-    "Plug 'KeitaNakamura/neodark.vim'
-    
-
-    ""Plug 'tpope/vim-fugitive'
-    ""Plug 'tpope/vim-repeat'
-    
 
     call plug#end()

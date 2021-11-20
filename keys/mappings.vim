@@ -98,6 +98,8 @@ nnoremap <leader>j :m .+1<CR>==
 nnoremap <leader>k :m .-2<CR>==
 
 " For dashboar.vim
+nnoremap <Leader>ff :DashboardFindFile<CR>
+nnoremap <Leader>f :DashboardFindHistory<CR>
 nnoremap <Leader>d :Dashboard<CR>
 nmap <Leader>ss :<C-u>SessionSave<CR>
 nmap <Leader>sl :<C-u>SessionLoad<CR>

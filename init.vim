@@ -10,3 +10,4 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/lightline.vim
 source $HOME/.config/nvim/plug-config/lualine.vim
 source $HOME/.config/nvim/plug-config/nvim-tree.vim
+"lua require('lspconfig').xx.setup{…}
